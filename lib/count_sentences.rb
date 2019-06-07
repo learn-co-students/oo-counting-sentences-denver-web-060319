@@ -14,8 +14,7 @@ class String
     self.end_with?("!")
   end
 
-  def count_sentences
-    count = 0
+  def count_sentencess
     self.split(" ").reduce(0) do |sum, str|
       if str.sentence? || str.question? || str.exclamation?
         sum + 1
